@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EduPlatform
+
+**Learn. Practice. Grow.**
+
+EduPlatform is a web-based learning platform designed to help users learn programming and other skills through structured courses, lessons, video tutorials, quizzes, and progress tracking.
+
+## Features
+
+- Course Management
+- Lesson Management
+- Rich Text Lesson Editor
+- YouTube Video Lessons
+- Interactive Quiz System
+- Quiz Results and History
+- Learning Progress Tracking
+- Dashboard and Learning Statistics
+- Learning Streak Tracking
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Supabase
+- PostgreSQL
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/A-MAJED-DOT/educational-platform.git
+```
+
+### 2. Open the Project
+
+```bash
+cd educational-platform
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env.local` file in the project root and add your Supabase configuration:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+```
+
+Replace the placeholder values with your own Supabase project credentials.
+
+**Never commit your `.env.local` file or secret credentials to GitHub.**
+
+### 5. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Code Quality
 
-To learn more about Next.js, take a look at the following resources:
+Run ESLint:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Database and Authentication
 
-## Deploy on Vercel
+EduPlatform uses Supabase for:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Database management
+- User authentication
+- Learning data storage
+- Quiz and progress records
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Repository
+
+[GitHub – EduPlatform](https://github.com/A-MAJED-DOT/educational-platform)
+
+---
+
+**EduPlatform – Learn. Practice. Grow.**
